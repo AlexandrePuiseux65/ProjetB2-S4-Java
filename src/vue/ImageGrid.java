@@ -2,8 +2,7 @@ package vue;
 import javax.swing.*;
 import java.awt.*;
 
-public class ImageGrid extends JFrame
-{
+public class ImageGrid extends JFrame {
     private static final int ROWS = 6;
     private static final int COLS = 7;
     private static final String IMAGE_PATH = "src/img/img_V.jpg";
