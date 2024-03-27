@@ -17,17 +17,14 @@ public class ImageGrid extends JFrame {
 
         ImageIcon icon = new ImageIcon(IMAGE_PATH);
 
-        // Ajout des images au panel
         for (int i = 0; i < ROWS * COLS; i++) {
-            // Redimensionnement de l'image pour qu'elle s'adapte à la cellule du tableau
-            Image scaledImage = icon.getImage().getScaledInstance(112, 95, Image.SCALE_SMOOTH);
+            Image scaledImage = icon.getImage().getScaledInstance(114, 95, Image.SCALE_SMOOTH);
             ImageIcon scaledIcon = new ImageIcon(scaledImage);
 
             JLabel label = new JLabel(scaledIcon);
             panel.add(label);
         }
 
-        // Rendre la fenêtre visible
         setVisible(true);
     }
 
